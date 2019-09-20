@@ -37,6 +37,7 @@ public class ArvoreBinariaBusca {
 
     public Node remover(Node node, int key) {
         if (node == null) {
+            return null;
         }
         if (key < node.getValue()) {
             node.setLeft(remover(node.getLeft(), key));
