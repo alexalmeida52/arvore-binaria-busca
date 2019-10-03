@@ -37,6 +37,31 @@ public class ArvoreBinariaBuscaTest {
     }
 
     @Test
+    public void isBalanced(){
+        // Arrange
+        arvore = new ArvoreBinariaBusca();
+        arvore.insert(30);
+        arvore.insert(5);
+        arvore.insert(4);
+        arvore.insert(3);
+
+        arvore.insert(7);
+        arvore.insert(6);
+        arvore.insert(8);
+        arvore.insert(9);
+
+        arvore.insert(30);
+        arvore.insert(32);
+        arvore.insert(31);
+        arvore.insert(33);
+        arvore.insert(34);
+
+
+
+        assertTrue(arvore.isBalanced(arvore.getRoot()));
+    }
+
+    @Test
     public void getRoot() {
         //Arrange
 
